@@ -5,8 +5,14 @@
 h2{
   color: rgba(227, 210, 233, 0.4);
 }
-
-
+body{
+    min-width:800px;
+    width: auto !important;
+    width:800px;
+}
+video{
+  max-width: 100%;
+}
 h1.display-6
 {
   color: rgba(227, 210, 233, 1.3);
