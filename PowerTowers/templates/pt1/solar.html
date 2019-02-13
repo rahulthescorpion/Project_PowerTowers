@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "pt1/base.html" %}
+{% load staticfiles %}
+  {% block body_block %}
+
+  <div id='solarpara' class="container">
+    <pre>Solar power plant is based on the conversion of sunlight into electricity, either directly using photovoltaics (PV) or indirectly
+using concentrated solar power (CSP).Concentrated solar power systems use lenses, mirrors, and tracking systems to focus a large area of
+sunlight into a small beam.Photovoltaics converts light into electric current using the photoelectric effect.</pre>
+
+    <pre>Advantages:
+        1.Solar power is pollution free and causes no greenhouse gases to be emitted after installation
+        2.Reduced dependence on foreign oil and fossil fuels
+        3.Renewable clean power that is available every day of the year, even cloudy days produce some power
+        4.Return on investment unlike paying for utility bills
+        5.Virtually no maintenance as solar panels last over 30 years
+        6.Creates jobs by employing solar panel manufacturers, solar installers, etc. and in turn helps the economy
+        7.Excess power can be sold back to the power company if grid intertied
+        8.Ability to live grid free if all power generated provides enough for the home / building
+      </pre>
+
+
+  </div>
+<br>
+  <div class="container">
+
+    <!-- carousel imamges code here..-->
+  <p>Here is the image taken while installation..</p>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/solar1.jpg' %}" alt="Solar panel here">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'images/solar2.jpg' %}" alt="Solar Image here">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'images/solar3.jpg' %}" alt="Solar Image here">
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="container">
+    <p>For more details, contact us..</p>
+  </div>
+
+
+  {% endblock %}

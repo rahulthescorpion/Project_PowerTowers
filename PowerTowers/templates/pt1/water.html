@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "pt1/base.html" %}
+{% load staticfiles %}
+  {% block body_block %}
+
+<div class="container">
+  <h2 style="color:grey;">What is Purification?</h2>
+  <pre id='parawat'>
+Water purification is the process of removing undesirable chemicals, biological contaminants, suspended solids and gases from water. The goal
+is to produce water fit for a specific purpose.Most water is disinfected for human consumption (drinking water), but water purification may
+also be designed for a variety of other purposes,including fulfilling the requirements of medical, pharmacological, chemical and industrial
+applications. The methods used include physicalprocesses such as filtration, sedimentation, and distillation; biological processes such as
+slow sand filters or biologically active carbon;chemical processes such as flocculation and chlorination and the use of electromagnetic
+radiation such as ultraviolet light.</pre>
+
+</div>
+
+
+
+<!--<div class="container">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-50" src="{% static 'images/Waterp.jpg' %}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-50" src="{% static 'images/waterp2.jpg' %}" alt="Third slide">
+    </div>
+  </div>
+</div>
+</div>-->
+
+<div class="container" style = "text-align:center">
+  <video width="1020" height="640" autoplay controls>
+  <source src="{% static 'images/Water.mp4' %}" poster="{% static 'images/purew.jpg' %}" type="video/mp4">
+  </video>
+  </video>
+</div>
+
+<div class="container">
+  <h3>Water Changes everything!</h3>
+  <p>Call us for water purifier installation.Currently,the product avaiable is clean water purifier.</p>
+</div>
+
+
+<script type="text/javascript" src="{% static 'javascript/script.js' %}">
+
+</script>
+
+  {% endblock %}

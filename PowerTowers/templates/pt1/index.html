@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "pt1/base.html" %}
+{% load staticfiles %}
+  {% block body_block %}
+
+    <div  class="container">
+      <div id = 'IandB' class="jumbotron ">
+      <a id = 'inib' class="display-4" href= "{% url 'pt1:invbat' %}">Inverter and Batteries</a>
+    </div>
+  </div>
+
+  <div  class="container">
+    <div id = 'Wp' class="jumbotron ">
+    <a id = 'inWp' class="display-4" href= "{% url 'pt1:water' %}">Water Purifiers</a>
+  </div>
+</div>
+
+<div  class="container">
+  <div id = 'Spp' class="jumbotron ">
+  <a id = 'inSpp' class="display-4" href= "{% url 'pt1:solar' %}">Solar Power Plants</a>
+</div>
+</div>
+
+  {% endblock %}

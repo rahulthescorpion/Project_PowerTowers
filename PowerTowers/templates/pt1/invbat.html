@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends "pt1/base.html" %}
+{% load staticfiles %}
+  {% block body_block %}
+  <div class='container'>
+  <!--<div class="row" style="border:none; background:white; height:210px;">
+		<div class="col-xs-6">
+			<img src="{% static 'images/powercut.jpg' %}" style="height:250px;width: 500px; margin-left:20px;" />
+		</div>-->
+		<div class="col-xs-6" style="background:rgb(176, 182, 174)">
+			<h4 id='invtext'>Say No to powercuts..</h4>
+			<p style="font-style:italic; font-size:21px">   Don't worry about powercuts.We are one of the local sellers of the Microtek inverters.We are in business for almost a year.We all know a inverter for home is used for emergency backup power and used in some aircraft systems to convert a portion of the aircraft DC power to AC.The alternating current mainly used for electrical devices used in homes like radio, lights, motor, etc.</p>
+		</div>
+	</div>
+
+  <div class="container">
+    <h4>Company product Images here...Just Unpacked</h4>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-80" src="{% static 'images/microtek1.jpg' %}" alt="Solar panel here">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-80" src="{% static 'images/microtekorg.jpg' %}" alt="Solar Image here">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-80" src="{% static 'images/microtek2.jpg' %}" alt="Solar Image here">
+    </div>
+  </div>
+</div>
+  </div>
+
+<br>
+<br>
+
+<div  id='battery' class="container">
+  <p>And the batteries available are Exide and SfSonic..</p>
+  <p><img src="{% static 'images/exide1.jpg' %}" alt="Image here"><img src="{% static 'images/sfsonic.jpg' %}" alt="Image here"><img src="{% static 'images/exideb.jpg' %}" alt="Image here"><img src="{% static 'images/exide1.jpg' %}" alt="Image here"></p>
+</div>
+
+<div id='textbat' class="container">
+  <p>Batteries We have............</p>
+  <p>An efficient inverter battery must be able to meet frequent deep discharges, ensure reliability over months, be low maintenance, ensure minimum emission of gasses, no or minimum</p>
+  <p>For more details about EXIDE batteries:<a href="https://www.exideindustries.com/">Click here</a></p>
+  <p>For details about SF Sonic batteries:<a href="https://www.sfsonicpower.com/">Click here</a></p>
+</div>
+
+{% endblock %}
