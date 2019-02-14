@@ -24,7 +24,8 @@ def contact(request):
         if form.is_valid():
             form.save(commit=True)
             dict = {'success' : 'Submitted Successfully..'}
-            return HttpResponse('<h2>Submitted Successfully....</h2>')
+            #return HttpResponse('<h2>Submitted Successfully....</h2>')
+            return render(request,'pt1/Contsucc.html')
         else:
             pass
     return render(request,'pt1/contact.html',{'form':form})
